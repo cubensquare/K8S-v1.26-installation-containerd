@@ -89,7 +89,7 @@ sudo systemctl status containerd
   sudo apt-get install -y kubelet kubeadm kubectl
 ```
 
-# ERROR :  Recently post gpg update, there is an intermittent issue in downloading and updating the gpg. Follow below steps incase if you face GPG error
+# Incase if you face error in above steps , follow below commands . ERROR :  Recently post gpg update, there is an intermittent issue in downloading and updating the gpg. Follow below steps incase if you face GPG error
 
 ```bash
 sudo apt update
