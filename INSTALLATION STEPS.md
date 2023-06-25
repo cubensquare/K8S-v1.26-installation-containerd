@@ -100,6 +100,11 @@ sudo chmod 666 /etc/apt/sources.list.d/kubernetes.list
 sudo echo deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://apt.kubernetes.io/ kubernetes-xenial main | tee /etc/apt/sources.list.d/kubernetes.list
   sudo apt-get update
   sudo apt-get install -y kubelet kubeadm kubectl
+
+  Validation :
+  service kubelet status
+  kubeadm   # this command should produce an output . Incase if it says command not found, check the installation steps again
+  kubectl   # this command should produce an output . Incase if it says command not found, check the installation steps again
 ```
 
 ## Step d: Reboot the VM
