@@ -2,22 +2,24 @@
 
 
 ```console
-Step a : Create 2 VMs with Ubuntu 20.04 LTS OS. VM1: k8s-master-1, VM2: k8s-wn1
+Step a : Create 2 VMs with Ubuntu 20.04 LTS OS. VM1: k8s-controlplane, VM2: k8s-workernode-1
 
-$$ On k8s-master-1 node - perform below steps
+$$ On k8s-controlplane node & workernodes  - perform below steps
 Step b : containerd-installation
 Step c : kubelet,kubectl,kubeadm installation
 Step d : Reboot the VM
+
+## Control Plane steps
 Step e : Run kubeadm init and setup the control plane
 
-$$ On k8s-wn-1 node - perform below steps
+$$ On k8s-workernode-1 - perform below steps
 Step f : containerd-installation
 Step g : kubelet,kubectl,kubeadm installation
 Step h : Reboot the VM
 Step i : Run kubeadm join command
 
 ```
-# On k8s-master-1 node 
+# On k8s-controlplane & K8s-workernodes : Until step d
 ## Step b : containerd-installation
 ## How to install Containerd on Ubuntu OS
 
