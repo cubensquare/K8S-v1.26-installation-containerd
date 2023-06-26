@@ -77,8 +77,10 @@ Runc is a standardized runtime for spawning and running containers on Linux acco
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now containerd
-sudo systemctl status containerd     [# To come out of the status , press q ]
+sudo systemctl status containerd    
 ```
+
+# To come out of the promot , press q
 
 ## Step c : kubelet,kubectl,kubeadm installation
 
