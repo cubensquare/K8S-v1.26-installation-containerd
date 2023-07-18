@@ -85,17 +85,6 @@ sudo systemctl status containerd
 ## Step c : kubelet,kubectl,kubeadm installation
 
 ```bash
-  sudo apt update
-  sudo apt-get install -y apt-transport-https ca-certificates curl
-  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-  sudo apt-get update
-  sudo apt-get install -y kubelet kubeadm kubectl
-```
-
-# Incase if you face error in above steps , follow below commands . ERROR :  Recently post gpg update, there is an intermittent issue in downloading and updating the gpg. Follow below steps incase if you face GPG error
-
-```bash
 sudo apt update
 sudo apt-get install -y apt-transport-https ca-certificates curl
 curl -L https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add
