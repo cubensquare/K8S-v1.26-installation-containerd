@@ -91,8 +91,8 @@ curl -L https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --k
 sudo touch /etc/apt/sources.list.d/kubernetes.list
 sudo chmod 666 /etc/apt/sources.list.d/kubernetes.list
 sudo echo deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://apt.kubernetes.io/ kubernetes-xenial main | tee /etc/apt/sources.list.d/kubernetes.list
-  sudo apt-get update
-  sudo apt-get install -y kubelet kubeadm kubectl
+sudo apt-get update
+sudo apt-get install -y kubelet kubeadm kubectl
 
   Validation :
   service kubelet status
