@@ -100,7 +100,7 @@ sudo apt-get install -y kubelet kubeadm kubectl
   kubectl   # this command should produce an output . Incase if it says command not found, check the installation steps again
 ```
 
-## Step d: Reboot the VM
+## Step d: command remove - not required
 
 ## Step e: Run kubeadm init and setup the control plane
 ```bash
