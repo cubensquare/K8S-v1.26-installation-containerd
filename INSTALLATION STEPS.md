@@ -2,7 +2,7 @@
 
 
 ```console
-Step a : Create 2 VMs with Ubuntu 20.04 LTS OS. VM1: k8s-controlplane, VM2: k8s-workernode-1
+Step a : Create 3 VMs with Ubuntu 20.04 LTS OS. VM1: k8s-controlplane, VM2: k8s-workernode-1
 
 $$ On k8s-controlplane node & workernodes  - perform below steps
 Step b : containerd-installation
