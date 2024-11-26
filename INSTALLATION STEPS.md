@@ -96,7 +96,7 @@ sudo apt-get install -y kubelet kubeadm kubectl
 
 ## Step d: Run kubeadm init and setup the control plane
 ```bash
-  sudo kubeadm init
+  sudo kubeadm init --ignore-preflight-errors=all
   mkdir -p $HOME/.kube
   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
